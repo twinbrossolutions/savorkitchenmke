@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none"><title>Savor Kitchen MKE</title><rect width="256" height="256" rx="48" fill="#FFF7E8"/><g transform="translate(24 20)">
+    <path d="M88 66C65 46 103 39 83 19M121 63C100 44 139 32 119 12" stroke="#B9472B" stroke-width="6" stroke-linecap="round"/>
+    <path d="M144 53C142 29 157 17 178 17C179 38 165 54 144 53Z" fill="#28382C"/>
+    <path d="M146 51L166 29" stroke="#F7F3E9" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M39 105H177V139C177 174 151 195 108 195C65 195 39 174 39 139V105Z" fill="#B9472B"/>
+    <path d="M40 117H25C13 117 13 140 26 140H39M177 117H192C205 117 205 140 192 140H178" stroke="#B9472B" stroke-width="8" stroke-linecap="round"/>
+    <path d="M34 101C47 82 74 73 108 73C142 73 169 82 182 101H34Z" fill="#B9472B"/>
+    <path d="M97 73V66H119V73" stroke="#B9472B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M47 111H169" stroke="#F7F3E9" stroke-width="3" stroke-linecap="round"/>
+    <path d="M63 137C67 158 83 170 104 172" stroke="#F7F3E9" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+    <path d="M57 209H159" stroke="#28382C" stroke-width="5" stroke-linecap="round"/>
+  </g></svg>
