@@ -54,3 +54,51 @@
 
 /* Compact the agency credit at the end of the delivery section. */
 .visit{padding-bottom:20px}.visit .agency-credit{margin-top:30px;margin-bottom:0}
+
+/* Keep tablet and phone layouts within the available content width. */
+.nav .logo{min-width:0}.logo img{max-width:100%}
+.menu-grid,.story-grid,.visit-grid,.moments,.details{min-width:0}
+.menu-grid>*,.story-grid>*,.visit-grid>*,.moments>*,.details>*{min-width:0}
+@media(max-width:950px){.visit-grid{grid-template-columns:1fr}}
+@media(max-width:760px){
+  html{scroll-padding-top:90px}
+  .nav{min-height:72px;gap:16px}
+  .nav .logo{max-width:calc(100% - 60px)}
+  .logo img{width:220px}
+  .menu-toggle{display:block}
+  header #navigation{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cream);padding:15px 6%;flex-direction:column;gap:0;border-bottom:1px solid var(--line)}
+  header #navigation.open{display:flex}
+  header #navigation a{padding:12px 0}
+  .story-grid{grid-template-columns:1fr;gap:30px}
+  .story img{height:auto;max-height:420px;aspect-ratio:4/3}
+  .moments{grid-template-columns:1fr;gap:30px}
+  .moments img{height:auto;aspect-ratio:4/3}
+}
+@media(max-width:600px){
+  body{padding-bottom:var(--demo-bottom-height,80px)}
+  .wrap{padding-inline:6%}
+  .dish{grid-template-columns:minmax(0,1fr) auto;column-gap:12px}
+  .dish h3{overflow-wrap:anywhere;line-height:1.2}
+  .ordering{padding:24px 16px}
+  .ordering h3{font-size:clamp(28px,8vw,35px)}
+  .delivery{padding:14px 12px;gap:10px}
+  .delivery>span:nth-child(2){min-width:0}
+  .delivery strong{font-size:clamp(17px,5vw,20px)}
+  .delivery-arrow{flex-shrink:0}
+  .agency-credit{padding-inline:16px}
+  .agency-credit a{max-width:100%;flex-wrap:wrap;justify-content:center;text-align:center}
+  .mobile{gap:10px}
+  .mobile>a{min-height:44px;display:inline-flex;align-items:center}
+  .mobile .btn{padding-inline:14px}
+}
+@media(max-width:360px){
+  .details{grid-template-columns:1fr}
+  .filters{gap:8px}
+  .filters button{padding-inline:14px}
+  .blended-restaurant h1{font-size:clamp(30px,10.7vw,41px)}
+}
+
+/* Larger header wordmark, constrained to leave room for navigation. */
+.nav .logo img{width:310px}
+@media(min-width:761px) and (max-width:950px){.nav .logo img{width:260px}}
+@media(max-width:760px){.nav .logo img{width:280px}.nav{min-height:84px}}
