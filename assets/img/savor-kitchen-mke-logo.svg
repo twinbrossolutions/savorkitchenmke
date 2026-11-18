@@ -15,8 +15,8 @@
     <path d="M57 209H159" stroke="#28382C" stroke-width="5" stroke-linecap="round"/>
   </g>
   <path d="M267 53V212" stroke="#B9472B" stroke-opacity=".3" stroke-width="1.5"/>
-  <text x="303" y="132" fill="#28382C" font-family="Georgia, 'Times New Roman', serif" font-size="89" letter-spacing="-4">savor<tspan fill="#B9472B">.</tspan></text>
-  <text x="308" y="173" fill="#28382C" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="9">KITCHEN MKE</text>
-  <path d="M309 197H357M707 197H755" stroke="#B9472B" stroke-width="1.5"/>
-  <text x="532" y="197" text-anchor="middle" dominant-baseline="central" textLength="306" lengthAdjust="spacing" fill="#B9472B" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3.1">HOMEMADE. HEARTFELT.</text>
+  <text x="337" y="139" textLength="390" lengthAdjust="spacing" fill="#28382C" font-family="Georgia, 'Times New Roman', serif" font-size="125" letter-spacing="-4">savor<tspan fill="#B9472B">.</tspan></text>
+  <text x="337" y="184" textLength="390" lengthAdjust="spacing" fill="#28382C" font-family="Arial, Helvetica, sans-serif" font-size="27" letter-spacing="5">KITCHEN MKE</text>
+  <path d="M309 220H337M727 220H755" stroke="#B9472B" stroke-width="1.5"/>
+  <text x="532" y="220" text-anchor="middle" dominant-baseline="central" textLength="364" lengthAdjust="spacing" fill="#B9472B" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2">HOMEMADE. HEARTFELT.</text>
 </svg>
