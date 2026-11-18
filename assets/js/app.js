@@ -4,3 +4,20 @@ const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('
 
 // Account for the real header and fixed action bar, including device safe areas.
 (()=>{const root=document.documentElement;const top=document.querySelector('.demo');const header=document.querySelector('header');const bottom=document.querySelector('.mobile-cta,.mobile-book,.mobile');function sizeHero(){const topHeight=(top?.getBoundingClientRect().height||0)+(header?.getBoundingClientRect().height||0);const bottomHeight=bottom&&getComputedStyle(bottom).display!=='none'?bottom.getBoundingClientRect().height:0;root.style.setProperty('--demo-top-height',topHeight+'px');root.style.setProperty('--demo-bottom-height',bottomHeight+'px')}sizeHero();window.addEventListener('resize',sizeHero);if('ResizeObserver'in window){const observer=new ResizeObserver(sizeHero);[top,header,bottom].filter(Boolean).forEach(element=>observer.observe(element))}})();
+
+// Native scrolling supports touch, trackpads, keyboard controls and future photos.
+(()=>{
+ const gallery=document.querySelector('#food-gallery');
+ const previous=document.querySelector('.gallery-back'),next=document.querySelector('.gallery-forward');
+ if(!gallery||!previous||!next)return;
+ const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+ function update(){previous.disabled=gallery.scrollLeft<=2;next.disabled=gallery.scrollLeft+gallery.clientWidth>=gallery.scrollWidth-2}
+ function move(direction){const card=gallery.querySelector('article');const gap=parseFloat(getComputedStyle(gallery).columnGap)||0;gallery.scrollBy({left:direction*((card?.getBoundingClientRect().width||gallery.clientWidth)+gap),behavior:reducedMotion.matches?'instant':'smooth'})}
+ previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
+ gallery.addEventListener('scroll',update,{passive:true});
+ gallery.addEventListener('keydown',event=>{if(event.target!==gallery)return;if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();move(event.key==='ArrowRight'?1:-1)}});
+ window.addEventListener('resize',update);
+ if('ResizeObserver'in window)new ResizeObserver(update).observe(gallery);
+ if('MutationObserver'in window)new MutationObserver(update).observe(gallery,{childList:true});
+ update();
+})();
