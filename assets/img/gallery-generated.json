@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "chicken-biryani",
+    "name": "Chicken Biryani",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "mutton-biryani",
+    "name": "Mutton Biryani",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "chicken-pulao",
+    "name": "Chicken Pulao",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "mutton-pulao",
+    "name": "Mutton Pulao",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "palak-paneer",
+    "name": "Palak Paneer",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "chicken-kebab",
+    "name": "Chicken Kebab",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "traditional-salad",
+    "name": "Traditional Salad",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "russian-salad",
+    "name": "Russian Salad",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "fruit-custard",
+    "name": "Fruit Custard",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  },
+  {
+    "slug": "cherry-crunch",
+    "name": "Cherry Crunch",
+    "type": "AI-generated illustration",
+    "presentation": "Half tray"
+  }
+]

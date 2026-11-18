@@ -4,5 +4,3 @@ const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('
 
 // Account for the real header and fixed action bar, including device safe areas.
 (()=>{const root=document.documentElement;const top=document.querySelector('.demo');const header=document.querySelector('header');const bottom=document.querySelector('.mobile-cta,.mobile-book,.mobile');function sizeHero(){const topHeight=(top?.getBoundingClientRect().height||0)+(header?.getBoundingClientRect().height||0);const bottomHeight=bottom&&getComputedStyle(bottom).display!=='none'?bottom.getBoundingClientRect().height:0;root.style.setProperty('--demo-top-height',topHeight+'px');root.style.setProperty('--demo-bottom-height',bottomHeight+'px')}sizeHero();window.addEventListener('resize',sizeHero);if('ResizeObserver'in window){const observer=new ResizeObserver(sizeHero);[top,header,bottom].filter(Boolean).forEach(element=>observer.observe(element))}})();
-
-document.querySelectorAll('.delivery[aria-disabled="true"]').forEach(link=>link.addEventListener('click',event=>event.preventDefault()));

@@ -52,5 +52,11 @@
 /* Scale the longer client tagline for desktop screens. */
 @media(min-width:701px){.hero h1{font-size:clamp(52px,5.4vw,78px);line-height:1.08}}
 
-/* Compact the agency credit at the end of the delivery section. */
-.visit{padding-bottom:20px}.visit .agency-credit{margin-top:30px;margin-bottom:0}
+/* Compact the agency credit at the end of the last section. */
+#moments{padding-bottom:20px}#moments .agency-credit{margin-top:30px;margin-bottom:0}
+
+/* Keep both tray prices readable alongside each menu item. */
+.menu-price{display:flex;flex-direction:column;gap:5px;text-align:right;white-space:nowrap;line-height:1.5}.menu-price span{display:block}.menu-price b{font-weight:700}
+
+/* Menu photography stays in the gallery, separate from the price list. */
+.menu-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px}.menu-gallery article{min-width:0}.menu-gallery img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}.menu-gallery h3{font-size:23px;margin-top:14px}.menu-gallery p{margin-top:8px}.photo-credits{margin-top:12px;font-size:12px;line-height:1.7;color:var(--muted,#666)}.photo-credits summary{cursor:pointer;width:fit-content;text-decoration:underline;text-underline-offset:3px}.photo-credits ul{padding-left:18px;margin-top:12px}.photo-credits a{text-decoration:underline;text-underline-offset:2px}@media(max-width:950px){.menu-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:540px){.menu-gallery{grid-template-columns:1fr;gap:28px}.menu-gallery img{height:auto;aspect-ratio:4/3}}
