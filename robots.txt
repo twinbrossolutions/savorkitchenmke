@@ -1,8 +1,4 @@
-# Allow social link previews while search indexing remains disabled.
-User-agent: WhatsApp
-User-agent: facebookexternalhit
-User-agent: Facebot
-Disallow:
-
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://savorkitchenmke.com/sitemap.xml
