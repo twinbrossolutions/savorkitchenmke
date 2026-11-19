@@ -173,3 +173,12 @@
 }
 
 .kitchen-photo{margin:0;min-width:0}.kitchen-photo figcaption{margin-top:10px;font-size:11px;line-height:1.5;color:#dedfcf}
+
+/* Fill the first screen on every viewport, accounting for navigation and mobile actions. */
+.blended-restaurant{min-height:calc(100svh - var(--demo-top-height,100px) - var(--demo-bottom-height,0px));display:flex;flex-direction:column;box-sizing:border-box}
+.blended-restaurant>.wrap{width:100%;margin-block:auto}
+.blended-restaurant .ribbon{width:100%;margin-top:auto;flex-shrink:0}
+/* The credit closes the menu section directly above the footer. */
+#menu{padding-bottom:0}
+#menu .agency-credit{margin-top:30px;margin-bottom:0;padding-bottom:20px}
+footer .foot{padding-top:16px;padding-bottom:16px}
