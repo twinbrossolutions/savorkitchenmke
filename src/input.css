@@ -182,3 +182,10 @@
 #menu{padding-bottom:0}
 #menu .agency-credit{margin-top:30px;margin-bottom:0;padding-bottom:20px}
 footer .foot{padding-top:16px;padding-bottom:16px}
+
+/* A simple centered brand header on phones; ordering stays in the bottom bar. */
+@media(max-width:760px){
+ header .nav{display:flex;justify-content:center}
+ header .nav .logo{margin-inline:auto;max-width:100%}
+ header .nav .menu-toggle,header #navigation,header #navigation.open,header .nav>.btn{display:none}
+}
