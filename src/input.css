@@ -146,3 +146,30 @@
 
 /* Payment remains secondary to confirming an order with the kitchen. */
 .confirmed-payment{width:100%;max-width:570px;border-top:1px solid var(--line);padding-top:22px;margin-top:8px;display:flex;flex-direction:column;align-items:center;gap:12px}.confirmed-payment>p{font-size:13px;line-height:1.7;color:#756657}.payment-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 20px;border:1px solid #b9472b;border-radius:4px;color:#a63823;font-size:13px;font-weight:600;text-decoration:none}.payment-link:hover{background:#b9472b;color:#fff}.confirmed-payment .payment-note{font-size:12px;max-width:510px}.payment-link:focus-visible{outline:2px solid #28382c;outline-offset:4px}@media(max-width:600px){.confirmed-payment{align-items:stretch}.payment-link{width:100%}}
+
+/* Mobile ordering actions stay reachable while browsing the menu. */
+.mobile-actions{display:none}
+@media(max-width:760px){
+  body{padding-bottom:var(--demo-bottom-height,88px)}
+  .mobile-actions{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px max(16px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));background:#fff7e8f5;border-top:1px solid var(--line);box-shadow:0 -4px 20px #352c250a;backdrop-filter:blur(14px)}
+  .mobile-actions a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 10px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;line-height:1.3}
+  .mobile-message{background:var(--red);color:#fff;border:1px solid var(--red)}
+  .mobile-pay{background:transparent;color:var(--red);border:1px solid var(--red)}
+  .mobile-actions a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+}
+@media(hover:hover){.mobile-message:hover{background:#7b2519}.mobile-pay:hover{background:#a5342410}}
+
+/* Each dish carries its own photo beside its name, description and tray prices. */
+#menu .dish{align-content:start;grid-template-columns:minmax(0,1fr) auto}
+#menu .dish-photo{grid-column:1/-1;grid-row:1;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px;margin-bottom:12px}
+#menu .dish h3{grid-column:1;grid-row:2}
+#menu .dish .menu-price{grid-column:2;grid-row:2}
+#menu .dish p{grid-column:1/-1;grid-row:3}
+@media(max-width:600px){
+ #menu .dish{grid-template-columns:minmax(0,1fr)}
+ #menu .dish h3{grid-column:1;grid-row:2}
+ #menu .dish p{grid-column:1;grid-row:3}
+ #menu .dish .menu-price{grid-column:1;grid-row:4}
+}
+
+.kitchen-photo{margin:0;min-width:0}.kitchen-photo figcaption{margin-top:10px;font-size:11px;line-height:1.5;color:#dedfcf}
