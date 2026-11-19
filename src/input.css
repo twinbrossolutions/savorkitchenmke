@@ -139,3 +139,10 @@
  #menu .filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%;max-width:380px;margin-inline:auto}
  #menu .filters button{display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;padding:11px 14px;margin:0;white-space:nowrap}
 }
+
+/* Confirm orders in Instagram before requesting payment. */
+.menu-order{margin-top:30px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}.menu-order>p{max-width:570px;font-size:13px;line-height:1.7;color:#756657}.menu-order .order-profile-link{font-size:12px}.order-profile-link a{text-decoration:underline;text-underline-offset:3px}.menu-order .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:600px){.menu-order{align-items:stretch;text-align:left;gap:12px}.menu-order .btn{width:100%}}
+
+/* Payment remains secondary to confirming an order with the kitchen. */
+.confirmed-payment{width:100%;max-width:570px;border-top:1px solid var(--line);padding-top:22px;margin-top:8px;display:flex;flex-direction:column;align-items:center;gap:12px}.confirmed-payment>p{font-size:13px;line-height:1.7;color:#756657}.payment-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 20px;border:1px solid #b9472b;border-radius:4px;color:#a63823;font-size:13px;font-weight:600;text-decoration:none}.payment-link:hover{background:#b9472b;color:#fff}.confirmed-payment .payment-note{font-size:12px;max-width:510px}.payment-link:focus-visible{outline:2px solid #28382c;outline-offset:4px}@media(max-width:600px){.confirmed-payment{align-items:stretch}.payment-link{width:100%}}
